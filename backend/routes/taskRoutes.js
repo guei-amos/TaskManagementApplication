@@ -1,17 +1,17 @@
 import express from "express";
 import { getTasks, createTask,updateTask, deleteTask } from "../controllers/taskController.js";
-
+import protect from "../middleware/Express.js";
 
 
 
 const taskRoutes = express.Router();
 
-taskRoutes.get("/", getTasks);
+taskRoutes.get("/", protect, getTasks);
 
-taskRoutes.post("/", createTask);
+taskRoutes.post("/", protect, createTask);
 
-taskRoutes.put("/:id", updateTask);
+taskRoutes.put("/:id", protect, updateTask);
 
-taskRoutes.delete("/:id",  deleteTask);
+taskRoutes.delete("/:id",  protect, deleteTask);
 
 export default taskRoutes;
