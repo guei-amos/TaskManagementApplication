@@ -1,0 +1,94 @@
+.register-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f6f9;
+  font-family: Arial, sans-serif;
+}
+
+/* CARD */
+.register-card {
+  background: white;
+  width: 380px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* TITLE */
+.register-card h2 {
+  margin-bottom: 20px;
+}
+
+/* FORM */
+.register-form {
+  text-align: left;
+}
+
+.register-form div {
+  margin-bottom: 15px;
+}
+
+.register-form label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+/* INPUTS */
+.register-form input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.register-form input:focus {
+  border-color: #0d6efd;
+}
+
+/* BUTTON */
+.register-form button {
+  width: 100%;
+  padding: 10px;
+  background: #198754;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.register-form button:hover {
+  background: #157347;
+}
+
+/* MESSAGE */
+.register-message {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: green;
+}
+
+/* LINK */
+.register-footer {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.register-footer a {
+  color: #0d6efd;
+  text-decoration: none;
+}
+
+.register-footer a:hover {
+  text-decoration: underline;
+}
+
+.icon-container {
+  margin-bottom: 10px;
+}
