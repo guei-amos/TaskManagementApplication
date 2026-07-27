@@ -18,13 +18,27 @@ const createTask = (task,token) => {
     });
 };
 
+const updateTask = (id,task,token)=>{
+    return axios.put(`${API_URL}/${id}`,task,{
+        headers:{
+            Authorization:`Bearer ${token}`
+        }
+    });
+};
 
-
+const deleteTask = (id,token)=>{
+    return axios.delete(`${API_URL}/${id}`,{
+        headers:{
+            Authorization:`Bearer ${token}`
+        }
+    });
+};
 
 const taskService = {
     getTasks,
-    createTask
-   
+    createTask,
+    updateTask,
+    deleteTask
 };
 
 export default taskService;
