@@ -33,7 +33,8 @@ const frontendBuildPath = path.join(__dirname, "../frontend/build");
 app.use(express.static(frontendBuildPath));
 
 // Rediriger toutes les autres requêtes (hors API) vers l'index.html de React
-app.get('(.*)', (req, res) => {
+
+app.get('/*', (req, res) => {
   res.sendFile(path.join(frontendBuildPath, 'index.html'));
 });
 
